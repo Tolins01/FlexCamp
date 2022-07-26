@@ -53,14 +53,14 @@ module.exports.validateReview = (req, res, next) => {
     }
 }
 
-module.exports.checkReturnTo = (req,res,next)=>{
-    if(req.session.returnTo){  
-        res.locals.returnTo = req.session.returnTo;
-        console.log(req.session.returnTo)
-        console.log(res.locals.returnTo)
-        req.flash('success', " return to active")
-    }; next();
-}
+// module.exports.checkReturnTo = (req,res,next)=>{
+//     if(req.session.returnTo){  
+//         res.locals.returnTo = req.session.returnTo;
+//         console.log(req.session.returnTo)
+//         console.log(res.locals.returnTo)
+//         req.flash('success', " return to active")
+//     }; next();
+// }
 
 // module.exports.checkReturnTo = (req,res,next)=>{
 //     if(!req.isAuthenticated()){  
