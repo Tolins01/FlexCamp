@@ -1,4 +1,9 @@
 @media(max-width:400){
  #cluster-map{width:90%;
-             height:500px}   
+             height:500px}; 
+ .img-fluid{
+    height:400px;
+ }  
 }
+
+
