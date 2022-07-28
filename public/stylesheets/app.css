@@ -8,10 +8,12 @@
     height: 300px;
 }
 
-@media(max-width:400){
-     
+@media screen and (max-width:500px){
+    #cluster-map {
+        height: 400px;
+    }
     .img-fluid{
-       height:400px;
-       background-color:rgba(248, 249, 228, 0.713);
-    }  
+        height:400px;
+        background-color:rgba(248, 249, 228, 0.713);
+     };
    }

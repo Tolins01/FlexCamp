@@ -20,7 +20,7 @@ const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 const MongoDBStore = require("connect-mongo")(session);
 const cookieParser =require('cookie-parser');
-const dbUrl =   process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
+const dbUrl =   process.env.DB_URL || 'mongodb://localhost:27017/MyYelpApp';
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
@@ -34,7 +34,7 @@ db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
     console.log("Database connected");
 });
-
+ 
 const app = express();
 
 app.engine('ejs', ejsMate)
@@ -167,3 +167,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
+ 
